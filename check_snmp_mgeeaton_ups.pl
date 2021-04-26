@@ -486,7 +486,7 @@ sub ambient_temperature_test {
     output_over_temp_test();
 
     $upsmgEnvironAmbientTemp = $upsmgEnvironAmbientTemp / 10;
-    $returnstring = "Temperature : $upsmgEnvironAmbientTemp °C";
+    $returnstring = "Temperature : $upsmgEnvironAmbientTemp Â°C";
     if ($upsmgEnvironAmbientTemp <= $upsmgConfigTemperatureLow) { $status = 1; }
     if ($upsmgEnvironAmbientTemp >= $upsmgConfigTemperatureHigh) { $status = 1; }
     if ($upsmgOutputOverTemp == 1) { $status = 2; }
